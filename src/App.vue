@@ -1,31 +1,59 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <div class="wrapper">
     <router-view/>
+
+    <footer>
+  
+    </footer>
   </div>
 </template>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
-#nav {
-  padding: 30px;
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 16px
+}
+body{
+  padding-bottom: 46px;
+}
+a{
+  text-decoration: none;
+  color: #323232;
+  
+}
+.icon-more{
+  width: 12px;
+  height: 12.38px;
+
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.mint-swipe .mint-swipe-indicator.is-active {
+    background: #f3344a;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.mint-swipe .mint-swipe-indicator {
+    width: 4px;
+    height: 4px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    opacity: 0.5;
+    margin: 0 3px;
+}
+.mint-swipe .mint-swipe-indicators{
+  bottom: 1px;
+} 
+.clearfix{
+  clear: both;
 }
 </style>
